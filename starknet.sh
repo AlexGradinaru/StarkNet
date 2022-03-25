@@ -15,11 +15,12 @@ sudo apt-get install libgmp-dev -y
 pip3 install fastecdsa -y
 sudo apt-get install -y pkg-config -y
 
-sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source $HOME/.cargo/env
-rustup update
-rustup update nightly
-rustup target add wasm32-unknown-unknown --toolchain nightly
+function installRust {
+	echo -e '\n\e[42mInstall Rust\e[0m\n' && sleep 1
+	# sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
+	curl https://getsubstrate.io -sSf | bash -s -- --fast 
+	. $HOME/.cargo/env
+}
 
 
 git clone --branch v0.1.6-alpha https://github.com/eqlabs/pathfinder.git
