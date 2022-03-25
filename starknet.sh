@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt install cargo -y
 sudo apt install curl -y
 
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 2
@@ -22,6 +22,7 @@ function installRust {
 	. $HOME/.cargo/env
 }
 
+installRust
 
 git clone --branch v0.1.6-alpha https://github.com/eqlabs/pathfinder.git
 
