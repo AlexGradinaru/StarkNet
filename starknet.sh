@@ -12,7 +12,7 @@ sudo apt-get install libgmp-dev -y
 pip3 install fastecdsa -y
 sudo apt-get install -y pkg-config -y
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -y
+sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 sudo apt install cargo -y
 
