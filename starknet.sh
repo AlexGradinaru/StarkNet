@@ -5,7 +5,7 @@ sudo apt install curl -y
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 2
 
 apt install git -y
-apt install cargo -y
+
 
 
 sudo apt update && sudo apt full-upgrade -y
@@ -19,7 +19,7 @@ sudo apt-get install -y pkg-config -y
 echo -e '\n\e[42mInstall Rust\e[0m\n' && sleep 1
 sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
-
+apt install cargo -y
 
 
 
