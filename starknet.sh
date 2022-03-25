@@ -17,8 +17,7 @@ sudo apt-get install -y pkg-config -y
 
 
 echo -e '\n\e[42mInstall Rust\e[0m\n' && sleep 1
-# sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
-curl https://getsubstrate.io -sSf | bash -s -- --fast 
+sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
 
 
