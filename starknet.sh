@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install curl
+sudo apt install curl -y
 
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 2
 
@@ -22,8 +22,19 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 
 
-
 git clone --branch v0.1.6-alpha https://github.com/eqlabs/pathfinder.git
+
+
+
+sudo apt install python3.8-venv
+
+python3 -m venv .venv
+
+
+PIP_REQUIRE_VIRTUALENV=true pip install --upgrade pip
+
+PIP_REQUIRE_VIRTUALENV=true pip install -r requirements-dev.txt
+
 
 
 
